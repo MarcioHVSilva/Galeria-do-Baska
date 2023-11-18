@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<script src="https://kit.fontawesome.com/eb0a6a23e1.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Galeria-Baska</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+
+
+
+
+	<link rel="stylesheet" href="cadastro.css">
+
+
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="logo"><img src="assets/imgs/Logo.jpeg" alt=""></div>
+			<div class="menu">
+				<nav>
+					<a href="Home.html">Home</a>
+					<a href="#">Sobre mim</a>
+					<a href="#">Curiosidades</a>
+					<a href="cadastro.html">Cadastro</a>
+					<a href="login.html">Login</a>
+				</nav>
+			</div>
+			<div class="sociais">
+				<button><i class="fa-brands fa-instagram" style="color: #ff0000;"></i></button>
+				<button><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></button>
+				<button><i class="fa-brands fa-github" style="color: #ff0000;"></i></button>
+			</div>
+
+		</div>
+
+	</header>
+
+
+
+	<div id="login">
+		<div class="caixa">
+			<img src="assets/imgs/Los_Angeles_Lakers_logo.svg.png" alt="">
+			<h1>Cadastre-se</h1>
+
+            <div class="nome">
+				<input type="text" placeholder="Nome" id="nome_inp">
+			</div>
+			<div class="idade">
+				<input type="number" placeholder="Sua idade" id="idade_inp">
+			</div>
+			<div class="email">
+				<input type="email" placeholder="E-mail"
+				id="email_inp">
+			</div>
+
+			<div class="senha">
+				<input type="password" placeholder="Senha" id="senha_inp" onkeyup="verificarSenha()">
+				<div id="msg_senha"></div>
+				
+			</div>
+
+			<div class="senha">
+				<input type="password" placeholder="Confirme sua senha" id="confirme_senha_inp" onkeyup="confirmarASenha()">
+				<div id="msg_senha2"></div>
+			</div>
+			
+
+			<div class="entrar">
+				<p>Já tem uma conta ?<a href="login.html" id="a1"> Entre aqui </a></p>
+				<button onclick="cadastrar()">Cadastrar</button>
+			</div>
+            <div id="div_msg_erro"></div>
+		</div>
+	</div>
+
+	<script src="cadastro.js"></script>
+</html>
+
